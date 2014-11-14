@@ -25,8 +25,8 @@ class CameraPreview extends SurfaceView implements SurfaceHolder.Callback, Runna
 	// In some omap devices, system uses /dev/video[0-3],
 	// so users must use /dev/video[4-].
 	// In such a case, try cameraId=0 and cameraBase=4
-	private int cameraId=0;
-	private int cameraBase=0;
+	private int cameraId=3;
+	private int cameraBase=-1;
 	
 	// This definition also exists in ImageProc.h.
 	// Webcam must support the resolution 640x480 with YUYV format. 
